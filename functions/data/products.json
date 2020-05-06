@@ -1,0 +1,26 @@
+[
+  {
+    "sku": "PRD01",
+    "name": "Dog Basket",
+    "description": "Bed for your best friend",
+    "image": "https://res.cloudinary.com/dvme554nj/image/upload/v1588739739/barkbark.shop/dogbed_bp45vh.jpg",
+    "amount": 120,
+    "currency": "EUR"
+  },
+  {
+    "sku": "PRD02",
+    "name": "Dog Toy",
+    "description": "Keep your friend busy for hours",
+    "image": "https://res.cloudinary.com/dvme554nj/image/upload/v1588739845/barkbark.shop/dogtoy_fow5sy.jpg",
+    "amount": 40,
+    "currency": "EUR"
+  },
+  {
+    "sku": "PRD03",
+    "name": "Dog Groom Set",
+    "description": "Style your best friend with this groom set",
+    "image": "https://res.cloudinary.com/dvme554nj/image/upload/v1588739960/barkbark.shop/doggroom_onc9bv.jpg",
+    "amount": 70,
+    "currency": "EUR"
+  }
+]
