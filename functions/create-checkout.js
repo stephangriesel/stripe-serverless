@@ -1,6 +1,13 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const inventory = require('./data/products.json');
 
+/*
+This code pulls the SKU and quantity out of the event’s body, loads the product data, and validates that the quantity falls within bounds.
+
+Next, it uses the stripe package to create a new Checkout session and passes in the selected product’s data as an entry in the line_items array.
+https://stripe.com/docs/payments/checkout/one-time
+*/
+
 exports.handler = async (event) => {
     const { sku, quantity } = JSON.parse(event.body);
     const product = inventory.find((p) => p.sku === sku);
