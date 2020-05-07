@@ -23,11 +23,16 @@ export async function loadProducts() {
         .then((res) => res.json())
         .catch((err) => console.error(err));
 
-    const products = document.querySelector('.products');
+    const container = document.querySelector('.products');
 
-    // TODO: add markup to display products
-    const pre = document.createElement('pre');
-    pre.innerText = JSON.stringify(data, null, 2);
+    // // TEST JSON
+    // const pre = document.createElement('pre');
+    // pre.innerText = JSON.stringify(data, null, 2);
 
-    products.appendChild(pre);
+    // products.appendChild(pre);
+    data.forEach((item) => {
+        const product = createProductFromTemplate(item);
+
+        container.appendChild(product);
+    });
 }
